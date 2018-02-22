@@ -11,6 +11,7 @@ metadata:
 spec:
   accessModes:
     - {{ .Values.persistence.accessMode | quote }}
+  persistentVolumeReclaimPolicy: {{ .Values.persistence.reclaimPolicy | quote }}
   resources:
     requests:
       storage: {{ .Values.persistence.size | quote }}

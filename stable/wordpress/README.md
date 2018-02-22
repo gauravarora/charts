@@ -87,6 +87,7 @@ The following tables lists the configurable parameters of the WordPress chart an
 | `persistence.enabled`                | Enable persistence using PVC               | `true`                                                     |
 | `persistence.storageClass`           | PVC Storage Class                          | `nil` (uses alpha storage class annotation)                |
 | `persistence.accessMode`             | PVC Access Mode                            | `ReadWriteOnce`                                            |
+| `persistence.reclaimPolicy`          | PVC Reclaim Policy                         | `Retain`                                                   |
 | `persistence.size`                   | PVC Storage Request                        | `10Gi`                                                     |
 | `nodeSelector`                       | Node labels for pod assignment             | `{}`                                                       |
 

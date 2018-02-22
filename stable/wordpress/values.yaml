@@ -200,6 +200,7 @@ persistence:
   ##
   # storageClass: "-"
   accessMode: ReadWriteOnce
+  reclaimPolicy: Retain
   size: 10Gi
 
 ## Configure resource requests and limits
